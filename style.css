@@ -11,11 +11,12 @@ blockquote{
 body {
   font-family: 'Vollkorn', Georgia, serif;
   box-sizing: border-box;
+  background: #fafbfc;
 }
 
 img {
   display: block;
-  max-width: 100px;
+  max-width: 100%;
 }
 
 ul {
@@ -28,6 +29,7 @@ span {
 
 a {
   text-decoration: none;
+  color:inherit;
 }
 
 /* Grid geral */
@@ -42,17 +44,111 @@ a {
   ;
 }
 
+
+/* Header */
+
+
 .header {
   grid-area: header;
+  background: linear-gradient(135deg,#8844ee, #b07dfb);
+  padding:30px;
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: space-between;
+  align-content: center;
 }
+
+.header ul {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap:0 30px;
+  font-size: 1.15rem;
+  color:#ffffff;
+}
+
+.header li > a{
+  padding: 10px 10px;
+  background-color: #9968e0;
+  border-radius: 4px;
+}
+
+
+/* Sidenav */
 
 .sidenav {
   grid-area: sidenav;
 }
 
+
+.sidenav li {
+  display: grid;
+  grid-template-columns: minmax(100px,140px);
+  justify-content: center;
+  margin:40px 0;
+}
+
+.sidenav a:hover {
+  background-color: #b07dfb;
+  transition: 0.2;
+}
+
+.sidenav a {
+  padding:20px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteudo */
 .conteudo {
   grid-area:conteudo;
+  padding: 20px 60px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+.titulo h1 {
+  font-size: 4rem;
+  line-height: 1;
+  color:#b07dfb;
+}
+
+.titulo span {
+  color:#b07dfb;
+  font-size: 0.85rem;
+}
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: 80px 80px;
+  gap:0 20px;
+}
+
+.caracteristicas > div {
+  justify-self: start;
+  background: linear-gradient(#8844ee 70%, #ffffff 70%);
+  text-align: center;
+  padding: 0 20px 0px 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.paragrafo-principal {
+  grid-column: 1/-1;
+}
+
+.numero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:#b07dfb;
+  margin-bottom:15px;
+}
+
+.rotulo {
+}
+
+
 
 .anuncios {
   grid-area:anuncios;
