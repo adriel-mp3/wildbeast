@@ -1,4 +1,4 @@
-# Wildbeast :tw-1f43a:
+# Wildbeast :smile:
 Projeto desenvolvido durante o curso da Origamid, para praticar as funcionalidades mais ultilizadas do **CSS Grid Layout**.
 
 ------------
